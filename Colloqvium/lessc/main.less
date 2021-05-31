@@ -227,11 +227,11 @@ body {
   align-items: center;
 }
 
-.stat_table_item > div {
+.stat_table_item > * {
   border-left: 1px solid @color-white;
   border-bottom: 1px solid @color-white;
   border-top: 1px solid @color-white;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
@@ -306,4 +306,10 @@ body {
 .answer_controls_fail:hover {
   cursor: pointer;
   background: @color-red;
+}
+
+@media screen and (max-width: 700px) {
+  .stat_status {
+    display: none!important;
+  }
 }
